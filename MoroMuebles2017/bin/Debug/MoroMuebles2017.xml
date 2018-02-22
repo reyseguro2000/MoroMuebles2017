@@ -1,0 +1,186 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MoroMuebles2017
+</name>
+</assembly>
+<members>
+<member name="T:MoroMuebles2017.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.actualizacion">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.add">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.BANCO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.bod">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.cam">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.contr">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.ent">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.ENTRADASBOD">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.ENTRADFAB">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.ENTTRADA">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.fab">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.JAIMELOGO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.L2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.list">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.logo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.logo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.logo2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.logoprincipal">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.PAGADO1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.PAGADOYENTREGADO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.PAGO">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.per">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.Porcobrar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.REPORTES">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.s">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.sal">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.SALID">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.SALIDABOD">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.SALIDFAB">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.tall">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.unidades">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MoroMuebles2017.My.Resources.Resources.USUARIOS">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

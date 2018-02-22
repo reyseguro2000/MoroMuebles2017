@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{570D4C09-CBED-4048-9BFB-F0B875097EB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Captura.My.MyApplication</StartupObject>
+    <RootNamespace>Captura</RootNamespace>
+    <AssemblyName>CapturaMoroMuebles</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\xampp\htdocs\capturaMoroMuebles\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://moromuebles.no-ip.biz/capturaMoroMuebles/</UpdateUrl>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CapturaMoroMuebles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CapturaMoroMuebles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4D1C01DF67ED31D2FDF34EA7457CCCA076801F60</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MoroMuebles2017_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="actualiza.Designer.vb">
+      <DependentUpon>actualiza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="actualiza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="configuracion.Designer.vb">
+      <DependentUpon>configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lista_tarjetas_pva.Designer.vb">
+      <DependentUpon>lista_tarjetas_pva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lista_tarjetas_pva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayoreo\pago_mayoreo.Designer.vb">
+      <DependentUpon>pago_mayoreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mayoreo\pago_mayoreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\agregar_ruta.Designer.vb">
+      <DependentUpon>agregar_ruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\agregar_ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagos\seleccionar_cob.Designer.vb">
+      <DependentUpon>seleccionar_cob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\seleccionar_cob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagos\seleccionar_sup.Designer.vb">
+      <DependentUpon>seleccionar_sup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\seleccionar_sup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seleccionar_tarjeta.Designer.vb">
+      <DependentUpon>seleccionar_tarjeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="seleccionar_tarjeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\agregar_indicacion.designer.vb">
+      <DependentUpon>agregar_indicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\agregar_indicacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base_local.vb" />
+    <Compile Include="base_principal.vb" />
+    <Compile Include="bodega\salida_bodega.Designer.vb">
+      <DependentUpon>salida_bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bodega\salida_bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camioneta\detalle_carga.Designer.vb">
+      <DependentUpon>detalle_carga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="camioneta\detalle_carga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camioneta\entradas_camioneta.designer.vb">
+      <DependentUpon>entradas_camioneta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="camioneta\entradas_camioneta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camioneta\salidas_camioneta.designer.vb">
+      <DependentUpon>salidas_camioneta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="camioneta\salidas_camioneta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\clientes_alta.designer.vb">
+      <DependentUpon>clientes_alta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\clientes_alta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\clientes_ventas.Designer.vb">
+      <DependentUpon>clientes_ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\clientes_ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contratos\salidas_precontrato.designer.vb">
+      <DependentUpon>salidas_precontrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="contratos\salidas_precontrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contratos\salida_folio.Designer.vb">
+      <DependentUpon>salida_folio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="contratos\salida_folio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contratos\ventas_ac_re.designer.vb">
+      <DependentUpon>ventas_ac_re.vb</DependentUpon>
+    </Compile>
+    <Compile Include="contratos\ventas_ac_re.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contratos\ventas_pendientes.designer.vb">
+      <DependentUpon>ventas_pendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="contratos\ventas_pendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\entradas_fabrica.designer.vb">
+      <DependentUpon>entradas_fabrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\entradas_fabrica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\entrada_detalle.Designer.vb">
+      <DependentUpon>entrada_detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\entrada_detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\Entrada_repetida.Designer.vb">
+      <DependentUpon>Entrada_repetida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\Entrada_repetida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\pago_provedor.Designer.vb">
+      <DependentUpon>pago_provedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\pago_provedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\salida_fabrica.Designer.vb">
+      <DependentUpon>salida_fabrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\salida_fabrica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\salida_fabrica_detalle.Designer.vb">
+      <DependentUpon>salida_fabrica_detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\salida_fabrica_detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listado_articulos.Designer.vb">
+      <DependentUpon>listado_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listado_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listado_articulos_detalle.Designer.vb">
+      <DependentUpon>listado_articulos_detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listado_articulos_detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listado_tarjetas.Designer.vb">
+      <DependentUpon>listado_tarjetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listado_tarjetas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lista_precios_12meses.designer.vb">
+      <DependentUpon>lista_precios_12meses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lista_precios_12meses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayoreo\mayoreo_historial.Designer.vb">
+      <DependentUpon>mayoreo_historial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mayoreo\mayoreo_historial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayoreo\opcion_mayoreo.Designer.vb">
+      <DependentUpon>opcion_mayoreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mayoreo\opcion_mayoreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayoreo\venta_mayoreo.designer.vb">
+      <DependentUpon>venta_mayoreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mayoreo\venta_mayoreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayoreo\nuevo_cliente_mayoreo.designer.vb">
+      <DependentUpon>nuevo_cliente_mayoreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mayoreo\nuevo_cliente_mayoreo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="bodega\opcion_Bodega.Designer.vb">
+      <DependentUpon>opcion_Bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bodega\opcion_Bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camioneta\opcion_Camioneta.Designer.vb">
+      <DependentUpon>opcion_Camioneta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="camioneta\opcion_Camioneta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contratos\opcion_Contrato.Designer.vb">
+      <DependentUpon>opcion_Contrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="contratos\opcion_Contrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabrica\opcion_Fabrica.Designer.vb">
+      <DependentUpon>opcion_Fabrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fabrica\opcion_Fabrica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\opcion_clientes.Designer.vb">
+      <DependentUpon>opcion_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\opcion_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\cuenta_deposito.Designer.vb">
+      <DependentUpon>cuenta_deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\cuenta_deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\cuenta_historial_prestamo.Designer.vb">
+      <DependentUpon>cuenta_historial_prestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\cuenta_historial_prestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\cuenta_personal.Designer.vb">
+      <DependentUpon>cuenta_personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\cuenta_personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\cuenta_prestamo.Designer.vb">
+      <DependentUpon>cuenta_prestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\cuenta_prestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\cuenta_retiro.Designer.vb">
+      <DependentUpon>cuenta_retiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\cuenta_retiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\nuevo_personal.Designer.vb">
+      <DependentUpon>nuevo_personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\nuevo_personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal\opcion_Personal.Designer.vb">
+      <DependentUpon>opcion_Personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personal\opcion_Personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagos\pagos_alta.designer.vb">
+      <DependentUpon>pagos_alta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\pagos_alta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\opcion_reportes.Designer.vb">
+      <DependentUpon>opcion_reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\opcion_reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\reporte_entradas_salidas.designer.vb">
+      <DependentUpon>reporte_entradas_salidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\reporte_entradas_salidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taller\detalle_salida.Designer.vb">
+      <DependentUpon>detalle_salida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="taller\detalle_salida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taller\nuevo_taller.Designer.vb">
+      <DependentUpon>nuevo_taller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="taller\nuevo_taller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taller\salida_taller.Designer.vb">
+      <DependentUpon>salida_taller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="taller\salida_taller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_articulos.Designer.vb">
+      <DependentUpon>modificar_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\bonificar_cuenta.designer.vb">
+      <DependentUpon>bonificar_cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\bonificar_cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\cancelar_cuenta.designer.vb">
+      <DependentUpon>cancelar_cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\cancelar_cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_descuento.designer.vb">
+      <DependentUpon>modificar_descuento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_descuento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_enganche.designer.vb">
+      <DependentUpon>modificar_enganche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_enganche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_fecha.designer.vb">
+      <DependentUpon>modificar_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_folio.designer.vb">
+      <DependentUpon>modificar_folio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_folio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\Modificar_forma.designer.vb">
+      <DependentUpon>Modificar_forma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\Modificar_forma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_plazo.designer.vb">
+      <DependentUpon>modificar_plazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_plazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_ruta.designer.vb">
+      <DependentUpon>modificar_ruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_ruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_vendedor.designer.vb">
+      <DependentUpon>modificar_vendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modificar_vendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\modifica_forma.Designer.vb">
+      <DependentUpon>modifica_forma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\modifica_forma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\pagos_cancelar.designer.vb">
+      <DependentUpon>pagos_cancelar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\pagos_cancelar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_mod\tarjeta.designer.vb">
+      <DependentUpon>tarjeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_mod\tarjeta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarjeta_s.designer.vb">
+      <DependentUpon>tarjeta_s.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tarjeta_s.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tar_formato_cobra.Designer.vb">
+      <DependentUpon>tar_formato_cobra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tar_formato_cobra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tar_formato_super.Designer.vb">
+      <DependentUpon>tar_formato_super.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tar_formato_super.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unidades\cambiar_chofer.Designer.vb">
+      <DependentUpon>cambiar_chofer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unidades\cambiar_chofer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unidades\camioneta.Designer.vb">
+      <DependentUpon>camioneta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unidades\camioneta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unidades\moto.Designer.vb">
+      <DependentUpon>moto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unidades\moto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unidades\opcion_unidades.Designer.vb">
+      <DependentUpon>opcion_unidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="unidades\opcion_unidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validar_usuario.designer.vb">
+      <DependentUpon>Validar_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Validar_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagos\opcion_Pagos.Designer.vb">
+      <DependentUpon>opcion_Pagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagos\opcion_Pagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="taller\opcion_Taller.Designer.vb">
+      <DependentUpon>opcion_Taller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="taller\opcion_Taller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="actualiza.resx">
+      <DependentUpon>actualiza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="configuracion.resx">
+      <DependentUpon>configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lista_tarjetas_pva.resx">
+      <DependentUpon>lista_tarjetas_pva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mayoreo\pago_mayoreo.resx">
+      <DependentUpon>pago_mayoreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos\agregar_ruta.resx">
+      <DependentUpon>agregar_ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos\seleccionar_cob.resx">
+      <DependentUpon>seleccionar_cob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos\seleccionar_sup.resx">
+      <DependentUpon>seleccionar_sup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seleccionar_tarjeta.resx">
+      <DependentUpon>seleccionar_tarjeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\agregar_indicacion.resx">
+      <DependentUpon>agregar_indicacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bodega\salida_bodega.resx">
+      <DependentUpon>salida_bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camioneta\detalle_carga.resx">
+      <DependentUpon>detalle_carga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camioneta\entradas_camioneta.resx">
+      <DependentUpon>entradas_camioneta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camioneta\salidas_camioneta.resx">
+      <DependentUpon>salidas_camioneta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\clientes_alta.resx">
+      <DependentUpon>clientes_alta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\clientes_ventas.resx">
+      <DependentUpon>clientes_ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contratos\salidas_precontrato.resx">
+      <DependentUpon>salidas_precontrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contratos\salida_folio.resx">
+      <DependentUpon>salida_folio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contratos\ventas_ac_re.resx">
+      <DependentUpon>ventas_ac_re.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contratos\ventas_pendientes.resx">
+      <DependentUpon>ventas_pendientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\entradas_fabrica.resx">
+      <DependentUpon>entradas_fabrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\entrada_detalle.resx">
+      <DependentUpon>entrada_detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\Entrada_repetida.resx">
+      <DependentUpon>Entrada_repetida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bodega\opcion_Bodega.resx">
+      <DependentUpon>opcion_Bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camioneta\opcion_Camioneta.resx">
+      <DependentUpon>opcion_Camioneta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\opcion_clientes.resx">
+      <DependentUpon>opcion_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contratos\opcion_Contrato.resx">
+      <DependentUpon>opcion_Contrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\opcion_Fabrica.resx">
+      <DependentUpon>opcion_Fabrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\pago_provedor.resx">
+      <DependentUpon>pago_provedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\salida_fabrica.resx">
+      <DependentUpon>salida_fabrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fabrica\salida_fabrica_detalle.resx">
+      <DependentUpon>salida_fabrica_detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listado_articulos.resx">
+      <DependentUpon>listado_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listado_articulos_detalle.resx">
+      <DependentUpon>listado_articulos_detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listado_tarjetas.resx">
+      <DependentUpon>listado_tarjetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lista_precios_12meses.resx">
+      <DependentUpon>lista_precios_12meses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mayoreo\mayoreo_historial.resx">
+      <DependentUpon>mayoreo_historial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mayoreo\opcion_mayoreo.resx">
+      <DependentUpon>opcion_mayoreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mayoreo\venta_mayoreo.resx">
+      <DependentUpon>venta_mayoreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mayoreo\nuevo_cliente_mayoreo.resx">
+      <DependentUpon>nuevo_cliente_mayoreo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal\cuenta_personal.resx">
+      <DependentUpon>cuenta_personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal\nuevo_personal.resx">
+      <DependentUpon>nuevo_personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal\opcion_Personal.resx">
+      <DependentUpon>opcion_Personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos\pagos_alta.resx">
+      <DependentUpon>pagos_alta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\opcion_reportes.resx">
+      <DependentUpon>opcion_reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\reporte_entradas_salidas.resx">
+      <DependentUpon>reporte_entradas_salidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taller\detalle_salida.resx">
+      <DependentUpon>detalle_salida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taller\nuevo_taller.resx">
+      <DependentUpon>nuevo_taller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taller\salida_taller.resx">
+      <DependentUpon>salida_taller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_articulos.resx">
+      <DependentUpon>modificar_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\bonificar_cuenta.resx">
+      <DependentUpon>bonificar_cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\cancelar_cuenta.resx">
+      <DependentUpon>cancelar_cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_descuento.resx">
+      <DependentUpon>modificar_descuento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_enganche.resx">
+      <DependentUpon>modificar_enganche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_fecha.resx">
+      <DependentUpon>modificar_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_folio.resx">
+      <DependentUpon>modificar_folio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\Modificar_forma.resx">
+      <DependentUpon>Modificar_forma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_plazo.resx">
+      <DependentUpon>modificar_plazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_ruta.resx">
+      <DependentUpon>modificar_ruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modificar_vendedor.resx">
+      <DependentUpon>modificar_vendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\modifica_forma.resx">
+      <DependentUpon>modifica_forma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\pagos_cancelar.resx">
+      <DependentUpon>pagos_cancelar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_mod\tarjeta.resx">
+      <DependentUpon>tarjeta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarjeta_s.resx">
+      <DependentUpon>tarjeta_s.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tar_formato_cobra.resx">
+      <DependentUpon>tar_formato_cobra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tar_formato_super.resx">
+      <DependentUpon>tar_formato_super.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unidades\cambiar_chofer.resx">
+      <DependentUpon>cambiar_chofer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unidades\camioneta.resx">
+      <DependentUpon>camioneta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unidades\moto.resx">
+      <DependentUpon>moto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unidades\opcion_unidades.resx">
+      <DependentUpon>opcion_unidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validar_usuario.resx">
+      <DependentUpon>Validar_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagos\opcion_Pagos.resx">
+      <DependentUpon>opcion_Pagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taller\opcion_Taller.resx">
+      <DependentUpon>opcion_Taller.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MoroMuebles2017_ClaveTemporal.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15645374_1353364528048649_184967836_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15644845_1353364988048603_1660312915_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15673309_1353365068048595_1674220862_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15682679_1353365054715263_2084441908_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USUARIOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15666425_1353364688048633_55894229_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15645727_1353364824715286_1240270075_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15645058_1353365044715264_1383020445_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15644845_1353364988048603_1660312915_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15645769_1353364928048609_543507448_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPORTES.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANCO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ENTRADASBOD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SALIDABOD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SALID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ENTTRADA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ENTRADFAB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SALIDFAB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15781871_1357903704261398_1820738853_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15750251_1357903660928069_1264494779_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15673549_1353364888048613_362790162_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagos_mor.png" />
+    <None Include="Resources\Observaciones_mor.png" />
+    <None Include="Resources\Salidas_mor.png" />
+    <None Include="Resources\Entradas_mor.png" />
+    <None Include="Resources\Libreta_mor.png" />
+    <None Include="Resources\Reportes_mor.png" />
+    <None Include="Resources\Taller_mor.png" />
+    <None Include="Resources\Guardar_mor.png" />
+    <None Include="Resources\Personal_mor.png" />
+    <None Include="Resources\Rutas_mor.png" />
+    <None Include="Resources\Unidades_mor.png" />
+    <None Include="Resources\Mayoreo_mor.png" />
+    <None Include="Resources\Lista_Artículos_mor.png" />
+    <None Include="Resources\Proveedores_mor.png" />
+    <None Include="Resources\SALIR_mor.png" />
+    <None Include="Resources\ENTRAR_mor.png" />
+    <None Include="Resources\Fondo4.png" />
+    <None Include="Resources\SALIR01.png" />
+    <None Include="Resources\ENTRAR_01.png" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\Personal.png" />
+    <None Include="Resources\Lista de Artículos.png" />
+    <None Include="Resources\Proveedores.png" />
+    <None Include="Resources\Gruposusuarios.png" />
+    <None Include="Resources\verificar.png" />
+    <None Include="Resources\Lista_supervisor.png" />
+    <None Include="Resources\Mantenimiento.png" />
+    <None Include="Resources\Formulario.png" />
+    <None Include="Resources\observacion.png" />
+    <None Include="Resources\efectivoenmano.png" />
+    <None Include="Resources\pon_completo.jpg" />
+    <None Include="Resources\pon_frente.jpg" />
+    <None Include="Resources\unidades1.png" />
+    <None Include="Resources\moto.png" />
+    <None Include="Resources\ver_ventas.png" />
+    <None Include="Resources\salir.png" />
+    <None Include="Resources\entrar_llave.png" />
+    <None Include="Resources\icono_libreta.png" />
+    <None Include="Resources\logoprincipal.png" />
+    <None Include="Resources\Porcobrar.jpg" />
+    <None Include="Resources\PAGADOYENTREGADO.JPG" />
+    <None Include="Resources\PAGADO1.JPG" />
+    <None Include="Resources\actualizacion.jpg" />
+    <None Include="Resources\agregar.png" />
+    <None Include="Resources\busqueda.png" />
+    <None Include="Resources\agregar_venta.png" />
+    <None Include="Resources\agregar_cliente.png" />
+    <None Include="Resources\deacuerdo.png" />
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\camioneta.png" />
+    <None Include="Resources\cambiar.png" />
+    <None Include="Resources\Cama.png" />
+    <None Include="Resources\apretonmanos.png" />
+    <None Include="Resources\asistente.png" />
+    <Content Include="Icono2.ico" />
+    <Content Include="luna.ico" />
+    <Content Include="MoroMueblesDorado.ico" />
+    <None Include="Resources\Atención Cliente.png" />
+    <None Include="Resources\Clientes_01.png" />
+    <None Include="Resources\AtencionCliente_mor.png" />
+    <None Include="Resources\Clientes_mor.png" />
+    <None Include="Resources\Contrato_mor.png" />
+    <None Include="Resources\Cambiochofer_mor.png" />
+    <None Include="Resources\Agregar_mor.png" />
+    <None Include="Resources\AgregarCamioneta_mor.png" />
+    <None Include="Resources\BajaCamioneta.png" />
+    <None Include="Resources\AgregarUnidadMoto_mor.png" />
+    <None Include="Resources\BajaMoto.png" />
+    <Content Include="Resources\desmarcar.png" />
+    <None Include="Resources\JAIMELOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
